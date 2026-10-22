@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Apryse AWS Collaboration POC</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div>
+        <strong>Apryse collaboration</strong>
+        <span>AWS / .NET POC</span>
+      </div>
+      <div class="session">
+        <label>
+          Author
+          <input id="author" maxlength="80" />
+        </label>
+        <span id="status" role="status">Connecting</span>
+      </div>
+    </header>
+    <main id="viewer" aria-label="Document viewer"></main>
+    <script src="/vendor/signalr/signalr.min.js"></script>
+    <script src="/lib/webviewer.min.js"></script>
+    <script src="/app.js?v=2"></script>
+  </body>
+</html>

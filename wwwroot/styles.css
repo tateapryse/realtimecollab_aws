@@ -1,0 +1,85 @@
+:root {
+  color: #182027;
+  background: #eef2f3;
+  font-family: "Segoe UI", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  display: grid;
+  grid-template-rows: 56px 1fr;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 8px 18px;
+  color: #f7faf9;
+  background: #173b3f;
+}
+
+header strong,
+header span {
+  display: block;
+}
+
+header > div > span {
+  color: #b8d5d2;
+  font-size: 12px;
+}
+
+.session {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.session label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+}
+
+.session input {
+  width: 140px;
+  padding: 6px 8px;
+  border: 1px solid #789795;
+  border-radius: 4px;
+  color: #182027;
+  background: #fff;
+}
+
+#status {
+  min-width: 76px;
+  color: #9de2a8;
+  font-size: 12px;
+  text-align: right;
+}
+
+#viewer {
+  min-height: 0;
+}
+
+@media (max-width: 600px) {
+  body {
+    grid-template-rows: 72px 1fr;
+  }
+
+  header {
+    padding: 8px 10px;
+  }
+
+  header > div:first-child span,
+  .session label {
+    display: none;
+  }
+}

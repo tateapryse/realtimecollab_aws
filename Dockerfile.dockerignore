@@ -1,0 +1,7 @@
+artifacts/
+bin/
+node_modules/
+obj/
+.git/
+*.suo
+*.user
